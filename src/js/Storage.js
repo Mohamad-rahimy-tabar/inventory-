@@ -43,7 +43,7 @@ export default class Storage {
   // get all categories from localstorage
   static getAllCategories() {
     const savedCategories = JSON.parse(localStorage.getItem("categories")) || [];
-    const sortedCategories = savedCategories.sort(() => {
+    const sortedCategories = savedCategories.sort((a, b) => {
       return new Date(a.createdDate) > new Date(b.createdDate) ? -1 : 1;
     });
     return sortedCategories;
@@ -68,7 +68,7 @@ export default class Storage {
   // get all products from localstorage
   static getAllProducts() {
     const savedProducts = JSON.parse(localStorage.getItem("products")) || [];
-    const sortedProducts = savedProducts.sort(() => {
+    const sortedProducts = savedProducts.sort((a, b) => {
       return new Date(a.createdDate) > new Date(b.createdDate) ? -1 : 1;
     });
     return sortedProducts;
