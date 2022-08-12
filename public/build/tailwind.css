@@ -624,17 +624,14 @@ select{
 .relative{
   position: relative;
 }
-.top-20{
-  top: 5rem;
+.top-16{
+  top: 4rem;
 }
 .left-0{
   left: 0px;
 }
 .top-0{
   top: 0px;
-}
-.top-16{
-  top: 4rem;
 }
 .z-40{
   z-index: 40;
@@ -685,6 +682,9 @@ select{
 .h-screen{
   height: 100vh;
 }
+.h-4{
+  height: 1rem;
+}
 .h-6{
   height: 1.5rem;
 }
@@ -694,17 +694,17 @@ select{
 .h-full{
   height: 100%;
 }
-.h-4{
-  height: 1rem;
-}
 .w-screen{
   width: 100vw;
 }
 .w-full{
   width: 100%;
 }
-.w-1\/3{
-  width: 33.333333%;
+.w-1\/2{
+  width: 50%;
+}
+.w-4{
+  width: 1rem;
 }
 .w-6{
   width: 1.5rem;
@@ -715,30 +715,8 @@ select{
 .w-11\/12{
   width: 91.666667%;
 }
-.w-1\/2{
-  width: 50%;
-}
-.w-4{
-  width: 1rem;
-}
 .flex-1{
   flex: 1 1 0%;
-}
-@-webkit-keyframes ping{
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-@keyframes ping{
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-.animate-ping{
-  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 @-webkit-keyframes bounce{
   0%, 100%{
@@ -959,14 +937,14 @@ select{
   .sm\:ml-6{
     margin-left: 1.5rem;
   }
-  .sm\:w-3\/4{
-    width: 75%;
-  }
   .sm\:w-1\/2{
     width: 50%;
   }
   .sm\:w-1\/3{
     width: 33.333333%;
+  }
+  .sm\:w-3\/4{
+    width: 75%;
   }
   .sm\:text-base{
     font-size: 1rem;
@@ -974,23 +952,26 @@ select{
   }
 }
 @media (min-width: 768px){
-  .md\:h-7{
-    height: 1.75rem;
+  .md\:top-20{
+    top: 5rem;
   }
   .md\:h-6{
     height: 1.5rem;
   }
-  .md\:w-1\/2{
-    width: 50%;
+  .md\:h-7{
+    height: 1.75rem;
   }
   .md\:w-1\/3{
     width: 33.333333%;
   }
-  .md\:w-7{
-    width: 1.75rem;
-  }
   .md\:w-6{
     width: 1.5rem;
+  }
+  .md\:w-1\/2{
+    width: 50%;
+  }
+  .md\:w-7{
+    width: 1.75rem;
   }
   .md\:w-2\/3{
     width: 66.666667%;
